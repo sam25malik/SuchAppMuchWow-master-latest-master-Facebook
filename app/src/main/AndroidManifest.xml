@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="such.app.much.wow">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="IIITD MEMES"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"/>
+
+        <activity android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+
+            />
+
+
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".SignUpActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".PostImageViewActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".SplashScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

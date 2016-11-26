@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">SuchAppMuchWow</string>
+    <string name="title_activity_home">HomeActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_logout">Logout</string>
+    <string name="facebook_app_id">197680187306460</string>
+</resources>
